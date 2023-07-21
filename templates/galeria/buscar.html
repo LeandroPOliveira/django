@@ -1,7 +1,7 @@
 {% extends 'galeria/base.html' %}
 {% load static %}
 {% block content %}
-    
+
             <section class="conteudo">
                 <section class="banner">
                     <img class="banner__imagem" src="{% static '/assets/imagens/Banner(2).png' %}" alt="banner Alura Space">
@@ -43,9 +43,12 @@
                             </li>
                             {% endfor %}
                             {% else %}
+                            <div class="imagem__texto">
+                                <p>Fotografias não encontradas</p>
+                            </div>
                             {% endif %}
                         </ul>
-                        
+
                     </div>
                 </section>
             </section>
